@@ -600,7 +600,7 @@ function cyl(context is Context, reg is box, k is string, p is array, q is array
 
 function ball(context is Context, reg is box, k is string, p is array, r is number)
 {
-    fSphere(context, nid(reg, k), { "center" : v3(p[0], p[1], p[2]), "radius" : r * MM });
+    opSphere(context, nid(reg, k), { "center" : v3(p[0], p[1], p[2]), "radius" : r * MM });
 }
 
 // Bent wire: cylinders between the points, a sphere at every point.
