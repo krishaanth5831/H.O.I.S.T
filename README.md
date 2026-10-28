@@ -13,6 +13,13 @@ step is a MuJoCo sim of one hook hanging on a wire under a full plant, with twin
 out. `probes/hang_probe.py` is the first test of that contact. The plan and the research are
 in the Vinea vault, under `08 Modules/HOIST/`.
 
+`design/` holds the options still on the table:
+- two end effectors, a wire rider and a hook carrier
+- three lifts for the SPINE cart: mast, scissor and telescopic
+
+They exist as an Onshape FeatureScript (`hoist_design_options.fs`) and as a MuJoCo animation
+with clearance checks (`hoist_demo.py`; `--windowed` to watch, `--checks-only` for PASS/FAIL).
+
 ## Git
 
 Work happens on `dev`. `main` is protected and only takes PRs from `dev`; the
