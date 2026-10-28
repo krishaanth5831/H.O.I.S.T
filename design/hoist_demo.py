@@ -35,19 +35,19 @@ WIRE_Z = 3800.0       # high-wire height, unverified
 ROW_Y = 2200.0        # drawn row length, arbitrary
 HOOK_YS = [-1050.0, -700.0, -350.0, 0.0, 650.0]   # 350 pitch, unverified; +650 already moved, 0 is next
 SUPPORT_Y = -175.0    # one support between two hooks, unverified
-ZB_WORK = 3170.0      # Y-beam underside at work: puts the tool mount 440 under the wire
-C0 = np.array([-7.0, 0.0, -103.0])     # hook centre = rotor axis, tool frame (stylised hook)
-EXIT = np.array([-7.0, 0.0, -108.5])   # twine leaves the bottom cup, relative to the hook centre
-NIP = np.array([-14.0, 0.0, -290.0])   # A capstan nip, tool frame
+ZB_WORK = 3170.0      # Y-beam underside at work: puts the tool mount 440 under the wire, design choice
+C0 = np.array([-7.0, 0.0, -103.0])     # hook centre = rotor axis, tool frame; stylised hook, unverified
+EXIT = np.array([-7.0, 0.0, -108.5])   # twine leaves the bottom cup, relative to the hook centre; unverified
+NIP = np.array([-14.0, 0.0, -290.0])   # A capstan nip, tool frame, design choice
 K_RELEASE = 217.0     # twine one half-flip lets out (~ one hook length), unverified: sets the drop
 FREE_TWINE = 300.0    # hook to plant head before lowering, unverified
 TAKE_UP = 5.0         # A: capstan lifts the plant this much to unload the hook, guess
 SLIDE = 25.0          # fork slides this far along the wire onto the hook (fingers reach 12 past it), design choice
 JAW_OPEN = 7.5        # each finger's opening stroke, design choice
 IDLER_OPEN = 45.0     # A: idler stroke, clears the twine 25 off-centre while the fork slides, design choice
-LOW_DZ = {"S1": 1500.0 - ZB_WORK, "S2": 1020.0 - ZB_WORK, "S3": 1395.0 - ZB_WORK}  # lift collapsed
+LOW_DZ = {"S1": 1500.0 - ZB_WORK, "S2": 1020.0 - ZB_WORK, "S3": 1395.0 - ZB_WORK}  # lift collapsed, design choice
 EXT_WORK = (ZB_WORK - 20.0 - 1375.0) / 3.0   # S3: each stage's extension at work height
-L_ARM, Z_PIN0, Y_FIX = 1000.0, 410.0, -500.0  # S2 scissor: arm pin pitch, bottom pins, fixed-pin Y
+L_ARM, Z_PIN0, Y_FIX = 1000.0, 410.0, -500.0  # S2 scissor: arm pin pitch, bottom pins, fixed-pin Y; design choice
 
 FPS = 30
 W, H = 640, 720       # one view; the video puts two side by side
