@@ -21,10 +21,8 @@ Nothing physical is built. What exists is one physics probe and a design compari
 
 **Pending**
 - The choice of A only holds if real hooks leave enough free twine between the hook and
-  the plant head for the capstan to grip: about 105 mm in the current layout. In the
-  clearance checks, at 100 mm the head (drawn as a 50 mm ball) comes within 3.4 mm of the
-  capstan bracket; 110 mm clears. Real heads with young leaves are bigger. If real hooks
-  don't leave that much, A is out.
+  the plant head for the capstan to grip: about 105 mm in the current layout (the demo and
+  the CAD draw 300 mm, an unverified guess). If real hooks don't leave that much, A is out.
 - Not measured yet: free twine, the hook's flip axis, twine released per half-flip,
   winding direction, hook pitch along the wire, wire height, plant weight. The values for
   these in the code are placeholders: guesses marked `unverified`, or figures taken from a
